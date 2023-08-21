@@ -1,0 +1,349 @@
+May 16 17:34:50.901 INFO Checking contracts
+May 16 17:34:50.920 INFO Starting Devnet
+May 16 17:34:50.934 INFO Initiating Devnet boot sequence (working_dir: /Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258490)
+May 16 17:34:50.934 INFO Event observer starting with config EventObserverConfig { normalization_enabled: true, grpc_server_enabled: false, hooks_enabled: true, chainhook_config: Some(ChainhookConfig { stacks_chainhooks: [], bitcoin_chainhooks: [] }), bitcoin_rpc_proxy_enabled: true, event_handlers: [], ingestion_port: 20445, control_port: 20446, bitcoin_node_username: "devnet", bitcoin_node_password: "devnet", bitcoin_node_rpc_url: "http://localhost:18443", stacks_node_rpc_url: "http://localhost:20443", operators: {}, display_logs: true, cache_path: "/Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258490", bitcoin_network: Regtest, stacks_network: Devnet }
+May 16 17:34:50.934 INFO Initializing ordinals index in dir `/Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258490`
+May 16 17:34:50.934 INFO Creating network partage-v1.devnet
+May 16 17:34:50.934 INFO Starting bitcoin-node
+May 16 17:34:50.967 ERRO JSON-RPC error: transport error: Couldn't connect to host: Connection refused (os error 61)
+May 16 17:34:50.969 INFO Genesis ordinal indexing successful Ok(Info { blocks_indexed: 0, branch_pages: 1, fragmented_bytes: 11164, index_file_size: 1327104, index_path: "/Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258490/ordinal_index.redb", leaf_pages: 2, metadata_bytes: 1072, outputs_traversed: 0, page_size: 4096, sat_ranges: 0, stored_bytes: 52, transactions: [], tree_height: 2, utxos_indexed: 1 })
+May 16 17:34:55.984 INFO Created container bitcoin-node: fb0bbd5999eadad36aac3f23ca2d55ac5b7b1f3b81216ae7f20f1fcdff5dab34
+May 16 17:34:56.224 INFO Configuring bitcoin-node
+May 16 17:34:57.229 INFO Waiting for bitcoin-node
+May 16 17:34:57.498 INFO Registering addr(n3GRiDLKWuKLCw1DZmV75W1mE35qmW2tQm)#dm832d0a
+May 16 17:34:57.538 INFO Registering addr(mjSrB3wS4xab3kYqFktwBzfTdPg367ZJ2d)#kdxvqwc5
+May 16 17:34:57.765 INFO Registering addr(mqVnk6NPRdhntvfm4hh9vvjiRkFDUuSYsH)#ypxkdrsq
+May 16 17:34:57.874 INFO Registering addr(mjSrB3wS4xab3kYqFktwBzfTdPg367ZJ2d)#kdxvqwc5
+May 16 17:34:57.983 INFO Registering addr(mr1iPkD9N3RJZZxXRk7xF9d36gffa6exNC)#n3uhsuqz
+May 16 17:34:58.092 INFO Registering addr(muYdXKmX9bByAueDe6KFfHd5Ff1gdN9ErG)#0ayck9fm
+May 16 17:34:58.200 INFO Registering addr(mvZtbibDAAA3WLpY7zXXFqRa3T4XSknBX7)#hkf7ujwt
+May 16 17:34:58.308 INFO Registering addr(mg1C76bNTutiCDV3t9nWhZs3Dc8LzUufj8)#gtqjph77
+May 16 17:34:58.417 INFO Registering addr(mweN5WVqadScHdA81aATSdcVr4B6dNokqx)#qz3ysrq0
+May 16 17:34:58.528 INFO Registering addr(mzxXgV6e4BZSsz8zVHm3TmqbECt7mbuErt)#pnqz0pm8
+May 16 17:34:58.638 INFO Registering addr(n37mwmru2oaVosgfuvzBwgV2ysCQRrLko7)#lh2paj0q
+May 16 17:34:58.749 INFO Registering addr(n2v875jbJ4RjBnTjgbfikDfnwsDV5iUByw)#8606llct
+May 16 17:34:58.856 INFO Starting postgres
+May 16 17:35:15.743 INFO Created container postgres: 65a56e0191ff0354c00db293b21fc3135170b072e449f64c1cc1f20f90a6c410
+May 16 17:35:15.954 INFO Starting stacks-api
+May 16 17:36:24.398 INFO Created container stacks-api: fccba50091aca7c5dbf8fa8d4c8e4a49d5691f514009c353db1045f6379ca462
+May 16 17:36:24.637 INFO Starting stacks-node
+May 16 17:36:38.872 INFO Created container stacks-node: f43d89e8cf4412774662645f4aee8ead127267064eec42c9b3530251fb2bd398
+May 16 17:36:39.592 INFO POST /
+May 16 17:36:39.658 INFO POST /
+May 16 17:36:39.670 INFO POST /wallet
+May 16 17:36:43.110 INFO Created container stacks-explorer: 3574aa47ce0e52e6b30ab7f4a98d0d715274d2b860667f59834caab05f69087b
+May 16 17:36:43.110 INFO Starting stacks-explorer
+May 16 17:36:44.449 INFO POST /new_block
+May 16 17:36:44.457 INFO Start processing Stacks Block #0 (0x55c9...c2ee)
+May 16 17:36:44.457 INFO Active fork 0: Fork [], height = 0
+May 16 17:36:44.458 INFO Trying to append Block #0 (0x55c9...c2ee) to Fork [], height = 0
+May 16 17:36:44.458 INFO Stacks Block #0 (0x55c9...c2ee) successfully appended to Fork [Block #0 (0x55c9...c2ee)], height = 1
+May 16 17:36:44.458 INFO Active fork: 0 - Fork [Block #0 (0x55c9...c2ee)], height = 1 / 100
+May 16 17:36:44.458 INFO Active fork selected as canonical: 0
+May 16 17:36:44.458 INFO No block to confirm
+May 16 17:36:44.458 INFO Handling PropagateStacksChainEvent command
+May 16 17:36:44.460 INFO Genesis Stacks block anchored in Bitcoin block #100 includes 7 transactions
+May 16 17:36:47.827 INFO POST /new_burn_block
+May 16 17:36:47.864 INFO Start processing Bitcoin Block #101 (0x3b57...01fa)
+May 16 17:36:47.864 INFO Active fork 0: Fork [], height = 0
+May 16 17:36:47.864 INFO Trying to append Block #101 (0x3b57...01fa) to Fork [], height = 0
+May 16 17:36:47.864 INFO Active fork: 0 - Fork [Block #101 (0x3b57...01fa)], height = 1
+May 16 17:36:47.864 INFO Active fork selected as canonical: 0
+May 16 17:36:47.864 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:36:47.864 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:36:47.864 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:36:47.864 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:36:47.864 INFO 0 bitcoin chainhooks to deregister
+May 16 17:36:50.065 INFO POST /
+May 16 17:36:50.084 INFO POST /wallet
+May 16 17:36:50.102 INFO POST /
+May 16 17:36:50.102 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:36:52.297 INFO POST /new_burn_block
+May 16 17:36:52.303 INFO Start processing Bitcoin Block #102 (0x4bf1...982d)
+May 16 17:36:52.304 INFO Active fork 0: Fork [Block #101 (0x3b57...01fa)], height = 1
+May 16 17:36:52.304 INFO Trying to append Block #102 (0x4bf1...982d) to Fork [Block #101 (0x3b57...01fa)], height = 1
+May 16 17:36:52.304 INFO Comparing Block #101 (0x3b57...01fa) with Block #102 (0x4bf1...982d)
+May 16 17:36:52.304 INFO Active fork: 0 - Fork [Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 2
+May 16 17:36:52.304 INFO Active fork selected as canonical: 0
+May 16 17:36:52.304 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:36:52.304 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:36:52.304 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:36:52.305 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:36:52.305 INFO 0 bitcoin chainhooks to deregister
+May 16 17:36:54.006 INFO POST /
+May 16 17:36:54.012 INFO POST /wallet
+May 16 17:36:54.025 INFO POST /
+May 16 17:36:54.025 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:36:55.590 INFO POST /new_burn_block
+May 16 17:36:55.597 INFO Start processing Bitcoin Block #103 (0x7333...85ae)
+May 16 17:36:55.597 INFO Active fork 0: Fork [Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 2
+May 16 17:36:55.597 INFO Trying to append Block #103 (0x7333...85ae) to Fork [Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 2
+May 16 17:36:55.598 INFO Comparing Block #102 (0x4bf1...982d) with Block #103 (0x7333...85ae)
+May 16 17:36:55.598 INFO Active fork: 0 - Fork [Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 3
+May 16 17:36:55.598 INFO Active fork selected as canonical: 0
+May 16 17:36:55.598 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:36:55.598 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:36:55.598 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:36:55.598 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:36:55.598 INFO 0 bitcoin chainhooks to deregister
+May 16 17:36:57.295 INFO POST /new_block
+May 16 17:36:57.303 INFO Start processing Stacks Block #1 (0x1c1a...e1f7)
+May 16 17:36:57.304 INFO Active fork 0: Fork [Block #0 (0x55c9...c2ee)], height = 1
+May 16 17:36:57.304 INFO Trying to append Block #1 (0x1c1a...e1f7) to Fork [Block #0 (0x55c9...c2ee)], height = 1
+May 16 17:36:57.304 INFO Comparing Block #0 (0x55c9...c2ee) with Block #1 (0x1c1a...e1f7)
+May 16 17:36:57.304 INFO Stacks Block #1 (0x1c1a...e1f7) successfully appended to Fork [Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 2
+May 16 17:36:57.304 INFO Active fork: 0 - Fork [Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 2 / 103
+May 16 17:36:57.304 INFO Active fork selected as canonical: 0
+May 16 17:36:57.304 INFO No block to confirm
+May 16 17:36:57.304 INFO Handling PropagateStacksChainEvent command
+May 16 17:36:57.304 INFO Stacks block #1 anchored in Bitcoin block #103 includes 2 transactions
+May 16 17:36:58.392 INFO POST /new_mempool_tx
+May 16 17:36:58.393 INFO Handling PropagateStacksMempoolEvent command
+May 16 17:36:58.686 INFO POST /new_mempool_tx
+May 16 17:36:58.696 INFO Handling PropagateStacksMempoolEvent command
+May 16 17:36:58.869 INFO POST /new_mempool_tx
+May 16 17:36:58.870 INFO Handling PropagateStacksMempoolEvent command
+May 16 17:36:59.492 INFO POST /new_mempool_tx
+May 16 17:36:59.492 INFO Handling PropagateStacksMempoolEvent command
+May 16 17:37:00.622 INFO Created container bitcoin-explorer: 44a08d386f60cb84ca1dd5fb2386cac40c141261169e057fb8672d04d23e960e
+May 16 17:37:00.622 INFO Starting bitcoin-explorer
+May 16 17:37:00.834 INFO POST /
+May 16 17:37:00.844 INFO POST /wallet
+May 16 17:37:00.857 INFO POST /
+May 16 17:37:00.858 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:37:02.291 INFO POST /new_burn_block
+May 16 17:37:02.296 INFO Start processing Bitcoin Block #104 (0x00dc...ac9c)
+May 16 17:37:02.297 INFO Active fork 0: Fork [Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 3
+May 16 17:37:02.297 INFO Trying to append Block #104 (0x00dc...ac9c) to Fork [Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 3
+May 16 17:37:02.297 INFO Comparing Block #103 (0x7333...85ae) with Block #104 (0x00dc...ac9c)
+May 16 17:37:02.297 INFO Active fork: 0 - Fork [Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 4
+May 16 17:37:02.297 INFO Active fork selected as canonical: 0
+May 16 17:37:02.297 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:37:02.297 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:37:02.297 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:37:02.298 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:37:02.298 INFO 0 bitcoin chainhooks to deregister
+May 16 17:37:04.663 INFO POST /new_block
+May 16 17:37:04.664 INFO Start processing Stacks Block #2 (0x26e0...4902)
+May 16 17:37:04.664 INFO Active fork 0: Fork [Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 2
+May 16 17:37:04.664 INFO Trying to append Block #2 (0x26e0...4902) to Fork [Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 2
+May 16 17:37:04.664 INFO Comparing Block #1 (0x1c1a...e1f7) with Block #2 (0x26e0...4902)
+May 16 17:37:04.664 INFO Stacks Block #2 (0x26e0...4902) successfully appended to Fork [Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 3
+May 16 17:37:04.664 INFO Active fork: 0 - Fork [Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 3 / 104
+May 16 17:37:04.665 INFO Active fork selected as canonical: 0
+May 16 17:37:04.665 INFO No block to confirm
+May 16 17:37:04.665 INFO Handling PropagateStacksChainEvent command
+May 16 17:37:04.674 INFO Stacks block #2 anchored in Bitcoin block #104 includes 5 transactions
+May 16 17:37:05.565 INFO POST /
+May 16 17:37:05.571 INFO POST /wallet
+May 16 17:37:05.580 INFO POST /
+May 16 17:37:05.580 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:37:07.686 INFO POST /new_burn_block
+May 16 17:37:07.692 INFO Start processing Bitcoin Block #105 (0x458c...981f)
+May 16 17:37:07.692 INFO Active fork 0: Fork [Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 4
+May 16 17:37:07.692 INFO Trying to append Block #105 (0x458c...981f) to Fork [Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 4
+May 16 17:37:07.692 INFO Comparing Block #104 (0x00dc...ac9c) with Block #105 (0x458c...981f)
+May 16 17:37:07.692 INFO Active fork: 0 - Fork [Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 5
+May 16 17:37:07.693 INFO Active fork selected as canonical: 0
+May 16 17:37:07.694 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:37:07.694 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:37:07.694 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:37:07.694 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:37:07.694 INFO 0 bitcoin chainhooks to deregister
+May 16 17:37:08.725 INFO Local Devnet network ready
+May 16 17:37:08.803 INFO POST /new_block
+May 16 17:37:08.804 INFO Start processing Stacks Block #3 (0xdaae...25d0)
+May 16 17:37:08.804 INFO Active fork 0: Fork [Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 3
+May 16 17:37:08.804 INFO Trying to append Block #3 (0xdaae...25d0) to Fork [Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 3
+May 16 17:37:08.804 INFO Comparing Block #2 (0x26e0...4902) with Block #3 (0xdaae...25d0)
+May 16 17:37:08.804 INFO Stacks Block #3 (0xdaae...25d0) successfully appended to Fork [Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 4
+May 16 17:37:08.804 INFO Active fork: 0 - Fork [Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 4 / 105
+May 16 17:37:08.804 INFO Active fork selected as canonical: 0
+May 16 17:37:08.804 INFO No block to confirm
+May 16 17:37:08.804 INFO Handling PropagateStacksChainEvent command
+May 16 17:37:08.807 INFO Stacks block #3 anchored in Bitcoin block #105 includes 1 transactions
+May 16 17:37:10.057 INFO POST /
+May 16 17:37:10.062 INFO POST /wallet
+May 16 17:37:10.069 INFO POST /
+May 16 17:37:10.069 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:38:09.168 INFO POST /new_burn_block
+May 16 17:38:09.173 INFO Start processing Bitcoin Block #106 (0x5907...f9af)
+May 16 17:38:09.173 INFO Active fork 0: Fork [Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 5
+May 16 17:38:09.173 INFO Trying to append Block #106 (0x5907...f9af) to Fork [Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 5
+May 16 17:38:09.173 INFO Comparing Block #105 (0x458c...981f) with Block #106 (0x5907...f9af)
+May 16 17:38:09.173 INFO Active fork: 0 - Fork [Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 6
+May 16 17:38:09.173 INFO Active fork selected as canonical: 0
+May 16 17:38:09.173 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:38:09.174 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:38:09.174 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:38:09.174 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:38:09.174 INFO 0 bitcoin chainhooks to deregister
+May 16 17:38:10.486 INFO POST /new_block
+May 16 17:38:10.491 INFO Start processing Stacks Block #4 (0x9e99...27d4)
+May 16 17:38:10.491 INFO Active fork 0: Fork [Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 4
+May 16 17:38:10.491 INFO Trying to append Block #4 (0x9e99...27d4) to Fork [Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 4
+May 16 17:38:10.491 INFO Comparing Block #3 (0xdaae...25d0) with Block #4 (0x9e99...27d4)
+May 16 17:38:10.491 INFO Stacks Block #4 (0x9e99...27d4) successfully appended to Fork [Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 5
+May 16 17:38:10.491 INFO Active fork: 0 - Fork [Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 5 / 106
+May 16 17:38:10.491 INFO Active fork selected as canonical: 0
+May 16 17:38:10.491 INFO No block to confirm
+May 16 17:38:10.492 INFO Handling PropagateStacksChainEvent command
+May 16 17:38:10.495 INFO Stacks block #4 anchored in Bitcoin block #106 includes 3 transactions
+May 16 17:38:11.422 INFO POST /
+May 16 17:38:11.427 INFO POST /wallet
+May 16 17:38:11.435 INFO POST /
+May 16 17:38:11.435 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:39:09.113 INFO POST /new_burn_block
+May 16 17:39:09.119 INFO Start processing Bitcoin Block #107 (0x4e78...c93d)
+May 16 17:39:09.119 INFO Active fork 0: Fork [Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 6
+May 16 17:39:09.119 INFO Trying to append Block #107 (0x4e78...c93d) to Fork [Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 6
+May 16 17:39:09.119 INFO Comparing Block #106 (0x5907...f9af) with Block #107 (0x4e78...c93d)
+May 16 17:39:09.119 INFO Active fork: 0 - Fork [Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d), Block #101 (0x3b57...01fa)], height = 7
+May 16 17:39:09.119 INFO Active fork selected as canonical: 0
+May 16 17:39:09.120 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:39:09.120 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:39:09.120 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:39:09.120 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:39:09.120 INFO 0 bitcoin chainhooks to deregister
+May 16 17:39:10.230 INFO POST /new_block
+May 16 17:39:10.230 INFO Start processing Stacks Block #5 (0xaec2...dc36)
+May 16 17:39:10.230 INFO Active fork 0: Fork [Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 5
+May 16 17:39:10.230 INFO Trying to append Block #5 (0xaec2...dc36) to Fork [Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 5
+May 16 17:39:10.230 INFO Comparing Block #4 (0x9e99...27d4) with Block #5 (0xaec2...dc36)
+May 16 17:39:10.230 INFO Stacks Block #5 (0xaec2...dc36) successfully appended to Fork [Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 6
+May 16 17:39:10.230 INFO Active fork: 0 - Fork [Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 6 / 107
+May 16 17:39:10.230 INFO Active fork selected as canonical: 0
+May 16 17:39:10.230 INFO No block to confirm
+May 16 17:39:10.230 INFO Handling PropagateStacksChainEvent command
+May 16 17:39:10.232 INFO Stacks block #5 anchored in Bitcoin block #107 includes 1 transactions
+May 16 17:39:11.355 INFO POST /
+May 16 17:39:11.361 INFO POST /wallet
+May 16 17:39:11.368 INFO POST /
+May 16 17:39:11.369 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:40:09.497 INFO POST /new_burn_block
+May 16 17:40:09.503 INFO Start processing Bitcoin Block #108 (0x722f...e139)
+May 16 17:40:09.503 INFO Active fork 0: Fork [Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d)], height = 6
+May 16 17:40:09.503 INFO Trying to append Block #108 (0x722f...e139) to Fork [Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d)], height = 6
+May 16 17:40:09.503 INFO Comparing Block #107 (0x4e78...c93d) with Block #108 (0x722f...e139)
+May 16 17:40:09.503 INFO Active fork: 0 - Fork [Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae), Block #102 (0x4bf1...982d)], height = 7
+May 16 17:40:09.503 INFO Active fork selected as canonical: 0
+May 16 17:40:09.503 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:40:09.503 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:40:09.503 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:40:09.503 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:40:09.503 INFO 0 bitcoin chainhooks to deregister
+May 16 17:40:10.633 INFO POST /new_block
+May 16 17:40:10.633 INFO Start processing Stacks Block #6 (0x92c0...7213)
+May 16 17:40:10.633 INFO Active fork 0: Fork [Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 6
+May 16 17:40:10.633 INFO Trying to append Block #6 (0x92c0...7213) to Fork [Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 6
+May 16 17:40:10.633 INFO Comparing Block #5 (0xaec2...dc36) with Block #6 (0x92c0...7213)
+May 16 17:40:10.633 INFO Stacks Block #6 (0x92c0...7213) successfully appended to Fork [Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 7
+May 16 17:40:10.633 INFO Active fork: 0 - Fork [Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7), Block #0 (0x55c9...c2ee)], height = 7 / 108
+May 16 17:40:10.633 INFO Active fork selected as canonical: 0
+May 16 17:40:10.633 INFO Handling PropagateStacksChainEvent command
+May 16 17:40:10.635 INFO Stacks block #6 anchored in Bitcoin block #108 includes 1 transactions
+May 16 17:40:11.755 INFO POST /
+May 16 17:40:11.760 INFO POST /wallet
+May 16 17:40:11.768 INFO POST /
+May 16 17:40:11.768 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:42:36.229 INFO POST /new_burn_block
+May 16 17:42:36.234 INFO Start processing Bitcoin Block #109 (0x7d21...38c6)
+May 16 17:42:36.234 INFO Active fork 0: Fork [Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae)], height = 6
+May 16 17:42:36.235 INFO Trying to append Block #109 (0x7d21...38c6) to Fork [Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae)], height = 6
+May 16 17:42:36.235 INFO Comparing Block #108 (0x722f...e139) with Block #109 (0x7d21...38c6)
+May 16 17:42:36.235 INFO Active fork: 0 - Fork [Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c), Block #103 (0x7333...85ae)], height = 7
+May 16 17:42:36.235 INFO Active fork selected as canonical: 0
+May 16 17:42:36.235 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:42:36.235 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:42:36.235 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:42:36.235 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:42:36.236 INFO 0 bitcoin chainhooks to deregister
+May 16 17:42:36.398 INFO POST /new_burn_block
+May 16 17:42:36.402 INFO Start processing Bitcoin Block #110 (0x1793...ada0)
+May 16 17:42:36.402 INFO Active fork 0: Fork [Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c)], height = 6
+May 16 17:42:36.402 INFO Trying to append Block #110 (0x1793...ada0) to Fork [Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c)], height = 6
+May 16 17:42:36.402 INFO Comparing Block #109 (0x7d21...38c6) with Block #110 (0x1793...ada0)
+May 16 17:42:36.402 INFO Active fork: 0 - Fork [Block #110 (0x1793...ada0), Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f), Block #104 (0x00dc...ac9c)], height = 7
+May 16 17:42:36.402 INFO Active fork selected as canonical: 0
+May 16 17:42:36.402 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:42:36.402 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:42:36.402 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:42:36.403 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:42:36.403 INFO 0 bitcoin chainhooks to deregister
+May 16 17:42:37.373 INFO POST /new_block
+May 16 17:42:37.373 INFO Start processing Stacks Block #7 (0x78a0...e6c7)
+May 16 17:42:37.373 INFO Active fork 0: Fork [Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7)], height = 6
+May 16 17:42:37.373 INFO Trying to append Block #7 (0x78a0...e6c7) to Fork [Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7)], height = 6
+May 16 17:42:37.373 INFO Comparing Block #6 (0x92c0...7213) with Block #7 (0x78a0...e6c7)
+May 16 17:42:37.373 INFO Stacks Block #7 (0x78a0...e6c7) successfully appended to Fork [Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7)], height = 7
+May 16 17:42:37.373 INFO Active fork: 0 - Fork [Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902), Block #1 (0x1c1a...e1f7)], height = 7 / 109
+May 16 17:42:37.374 INFO Active fork selected as canonical: 0
+May 16 17:42:37.374 INFO Handling PropagateStacksChainEvent command
+May 16 17:42:37.376 INFO Stacks block #7 anchored in Bitcoin block #109 includes 1 transactions
+May 16 17:42:37.979 INFO POST /
+May 16 17:42:37.984 INFO POST /wallet
+May 16 17:42:37.992 INFO POST /
+May 16 17:42:37.993 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:43:09.022 INFO POST /new_burn_block
+May 16 17:43:09.027 INFO Start processing Bitcoin Block #111 (0x1b4b...3171)
+May 16 17:43:09.027 INFO Active fork 0: Fork [Block #110 (0x1793...ada0), Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f)], height = 6
+May 16 17:43:09.027 INFO Trying to append Block #111 (0x1b4b...3171) to Fork [Block #110 (0x1793...ada0), Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f)], height = 6
+May 16 17:43:09.028 INFO Comparing Block #110 (0x1793...ada0) with Block #111 (0x1b4b...3171)
+May 16 17:43:09.028 INFO Active fork: 0 - Fork [Block #111 (0x1b4b...3171), Block #110 (0x1793...ada0), Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af), Block #105 (0x458c...981f)], height = 7
+May 16 17:43:09.028 INFO Active fork selected as canonical: 0
+May 16 17:43:09.028 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:43:09.028 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:43:09.028 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:43:09.028 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:43:09.028 INFO 0 bitcoin chainhooks to deregister
+May 16 17:43:10.146 INFO POST /new_block
+May 16 17:43:10.146 INFO Start processing Stacks Block #8 (0xf214...d2db)
+May 16 17:43:10.146 INFO Active fork 0: Fork [Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902)], height = 6
+May 16 17:43:10.146 INFO Trying to append Block #8 (0xf214...d2db) to Fork [Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902)], height = 6
+May 16 17:43:10.146 INFO Comparing Block #7 (0x78a0...e6c7) with Block #8 (0xf214...d2db)
+May 16 17:43:10.146 INFO Stacks Block #8 (0xf214...d2db) successfully appended to Fork [Block #8 (0xf214...d2db), Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902)], height = 7
+May 16 17:43:10.146 INFO Active fork: 0 - Fork [Block #8 (0xf214...d2db), Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0), Block #2 (0x26e0...4902)], height = 7 / 111
+May 16 17:43:10.147 INFO Active fork selected as canonical: 0
+May 16 17:43:10.147 INFO Handling PropagateStacksChainEvent command
+May 16 17:43:10.149 INFO Stacks block #8 anchored in Bitcoin block #111 includes 1 transactions
+May 16 17:43:10.773 INFO POST /
+May 16 17:43:10.779 INFO POST /wallet
+May 16 17:43:10.786 INFO POST /
+May 16 17:43:10.786 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:44:08.978 INFO POST /new_burn_block
+May 16 17:44:08.984 INFO Start processing Bitcoin Block #112 (0x3314...57d0)
+May 16 17:44:08.984 INFO Active fork 0: Fork [Block #111 (0x1b4b...3171), Block #110 (0x1793...ada0), Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af)], height = 6
+May 16 17:44:08.984 INFO Trying to append Block #112 (0x3314...57d0) to Fork [Block #111 (0x1b4b...3171), Block #110 (0x1793...ada0), Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af)], height = 6
+May 16 17:44:08.984 INFO Comparing Block #111 (0x1b4b...3171) with Block #112 (0x3314...57d0)
+May 16 17:44:08.984 INFO Active fork: 0 - Fork [Block #112 (0x3314...57d0), Block #111 (0x1b4b...3171), Block #110 (0x1793...ada0), Block #109 (0x7d21...38c6), Block #108 (0x722f...e139), Block #107 (0x4e78...c93d), Block #106 (0x5907...f9af)], height = 7
+May 16 17:44:08.985 INFO Active fork selected as canonical: 0
+May 16 17:44:08.985 INFO Handling PropagateBitcoinChainEvent command
+May 16 17:44:08.985 INFO Evaluating 0 bitcoin chainhooks registered
+May 16 17:44:08.985 INFO 0 bitcoin chainhooks positive evaluations
+May 16 17:44:08.985 INFO 0 bitcoin chainhooks will be triggered
+May 16 17:44:08.986 INFO 0 bitcoin chainhooks to deregister
+May 16 17:44:10.152 INFO POST /new_block
+May 16 17:44:10.152 INFO Start processing Stacks Block #9 (0xe6ec...69ae)
+May 16 17:44:10.152 INFO Active fork 0: Fork [Block #8 (0xf214...d2db), Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0)], height = 6
+May 16 17:44:10.152 INFO Trying to append Block #9 (0xe6ec...69ae) to Fork [Block #8 (0xf214...d2db), Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0)], height = 6
+May 16 17:44:10.152 INFO Comparing Block #8 (0xf214...d2db) with Block #9 (0xe6ec...69ae)
+May 16 17:44:10.152 INFO Stacks Block #9 (0xe6ec...69ae) successfully appended to Fork [Block #9 (0xe6ec...69ae), Block #8 (0xf214...d2db), Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0)], height = 7
+May 16 17:44:10.152 INFO Active fork: 0 - Fork [Block #9 (0xe6ec...69ae), Block #8 (0xf214...d2db), Block #7 (0x78a0...e6c7), Block #6 (0x92c0...7213), Block #5 (0xaec2...dc36), Block #4 (0x9e99...27d4), Block #3 (0xdaae...25d0)], height = 7 / 112
+May 16 17:44:10.153 INFO Active fork selected as canonical: 0
+May 16 17:44:10.153 INFO Handling PropagateStacksChainEvent command
+May 16 17:44:10.158 INFO Stacks block #9 anchored in Bitcoin block #112 includes 1 transactions
+May 16 17:44:10.850 INFO POST /
+May 16 17:44:10.855 INFO POST /wallet
+May 16 17:44:10.864 INFO POST /
+May 16 17:44:10.864 INFO Handling NotifyBitcoinTransactionProxied command
+May 16 17:44:43.655 WARN Ctrl+C received, initiating termination sequence.
+May 16 17:44:43.657 INFO Handling Termination command
+May 16 17:44:43.976 INFO Terminating bitcoin-explorer
+May 16 17:44:44.422 INFO Terminating stacks-explorer
+May 16 17:44:44.595 INFO Terminating bitcoin-node
+May 16 17:44:44.884 INFO Terminating stacks-api
+May 16 17:44:45.024 INFO Terminating postgres
+May 16 17:44:45.256 INFO Terminating stacks-node
+May 16 17:44:45.305 INFO Pruning network and containers
+May 16 17:44:45.310 INFO Artifacts (logs, conf, chainstates) available here: /Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258490
+May 16 17:44:45.310 INFO ✌️

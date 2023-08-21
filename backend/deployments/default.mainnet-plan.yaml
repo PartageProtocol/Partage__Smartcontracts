@@ -1,0 +1,18 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://stacks-node-api.mainnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: partage-v1-1
+            expected-sender: SP2NC54N30J95AHB55W6VY3MF9X4G07F4XFENMY51
+            cost: 5619831
+            path: contracts/partage-v1-1.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.0"

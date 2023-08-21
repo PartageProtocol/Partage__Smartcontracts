@@ -1,0 +1,18 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://stacks-node-api.testnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: partage-v1-1
+            expected-sender: ST2NC54N30J95AHB55W6VY3MF9X4G07F4XCPVYKGD
+            cost: 2914912
+            path: contracts/partage-v1-1.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.0"

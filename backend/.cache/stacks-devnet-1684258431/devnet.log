@@ -1,0 +1,16 @@
+May 16 17:33:51.488 INFO Checking contracts
+May 16 17:33:51.507 INFO Starting Devnet
+May 16 17:33:51.510 INFO Initiating Devnet boot sequence (working_dir: /Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258431)
+May 16 17:33:51.510 INFO Creating network partage-v1.devnet
+May 16 17:33:51.510 INFO Starting bitcoin-node
+May 16 17:33:51.511 INFO Event observer starting with config EventObserverConfig { normalization_enabled: true, grpc_server_enabled: false, hooks_enabled: true, chainhook_config: Some(ChainhookConfig { stacks_chainhooks: [], bitcoin_chainhooks: [] }), bitcoin_rpc_proxy_enabled: true, event_handlers: [], ingestion_port: 20445, control_port: 20446, bitcoin_node_username: "devnet", bitcoin_node_password: "devnet", bitcoin_node_rpc_url: "http://localhost:18443", stacks_node_rpc_url: "http://localhost:20443", operators: {}, display_logs: true, cache_path: "/Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258431", bitcoin_network: Regtest, stacks_network: Devnet }
+May 16 17:33:51.511 INFO Initializing ordinals index in dir `/Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258431`
+May 16 17:33:51.553 ERRO JSON-RPC error: transport error: Couldn't connect to host: Connection refused (os error 61)
+May 16 17:33:51.554 INFO Genesis ordinal indexing successful Ok(Info { blocks_indexed: 0, branch_pages: 1, fragmented_bytes: 11164, index_file_size: 1327104, index_path: "/Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258431/ordinal_index.redb", leaf_pages: 2, metadata_bytes: 1072, outputs_traversed: 0, page_size: 4096, sat_ranges: 0, stored_bytes: 52, transactions: [], tree_height: 2, utxos_indexed: 1 })
+May 16 17:33:52.776 INFO Created container bitcoin-node: 3c25813c00c2c5757815b688a62a3b4ff1bc6dc6da6ca2de4c2517233cc9b1af
+May 16 17:33:52.835 ERRO Fatal: unable to start bitcoind container: DockerResponseBadParameterError { message: "{\"message\":\"network partage-v1.devnet is ambiguous (2 matches found on name)\"}\n" }
+May 16 17:33:52.835 INFO Handling Termination command
+May 16 17:33:52.838 INFO Terminating bitcoin-node
+May 16 17:33:52.844 INFO Pruning network and containers
+May 16 17:33:52.932 INFO Artifacts (logs, conf, chainstates) available here: /Users/juliencarbonnell/stacks/partage-v1/backend/./.cache/stacks-devnet-1684258431
+May 16 17:33:52.932 INFO ⚠️  fatal error - unable to start bitcoind container: DockerResponseBadParameterError { message: "{\"message\":\"network partage-v1.devnet is ambiguous (2 matches found on name)\"}\n" }

@@ -1,5 +1,5 @@
 [project]
-name = 'partage-v1'
+name = 'partage-v1-1'
 description = ''
 authors = []
 telemetry = true
@@ -15,8 +15,8 @@ path = 'contracts/nft-trait.clar'
 clarity_version = 1
 epoch = 2.0
 
-[contracts.partage-v1]
-path = 'contracts/partage-v1.clar'
+[contracts.partage-v1-1]
+path = 'contracts/partage-v1-1.clar'
 clarity_version = 1
 epoch = 2.0
 

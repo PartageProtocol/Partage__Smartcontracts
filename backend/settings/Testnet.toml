@@ -4,4 +4,6 @@ stacks_node_rpc_address = "https://stacks-node-api.testnet.stacks.co"
 deployment_fee_rate = 10
 
 [accounts.deployer]
-mnemonic = "<YOUR PRIVATE TESTNET MNEMONIC HERE>"
+mnemonic = "lesson fatigue basic swift hurdle knife element belt shield west mixed bronze draft image student spread girl grid interest wild display laugh over bridge"
+# stx_address: ST2NC54N30J95AHB55W6VY3MF9X4G07F4XCPVYKGD
+# btc_address: tb1qh2qyl8npf4pzkl3ts8ch2xpwagmdtc7aczcgdt

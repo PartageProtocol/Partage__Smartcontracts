@@ -1,0 +1,61 @@
+#V2
+(contract-call? .partage-v1 mint-nft 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM "none")
+(contract-call? .partage-v1 list-nft {token-id: u1, unit-price: u3000, expiry: u500, taker: none})
+::set_tx_sender ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 get-listing u1)
+::set_tx_sender ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+(contract-call? .partage-v1 unlist-nft u1)
+(contract-call? .partage-v1 mint-nft 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM "none")
+::get_assets_map
+::get_assets_maps
+(contract-call? .partage-v1 mint-nft 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM "none")
+(contract-call? .partage-v1 burn-nft u3 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM)
+::get_assets_maps
+(contract-call? .partage-v1 transfer-nft u2 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5)
+::get_assets_maps
+(contract-call? .partage-v1 fractionalize-nft u1 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM u10)
+::get_assets_maps
+(contract-call? .partage-v1 list-fractions {token-id: u1, amount: u10, unit-price: u250, expiry: u500, taker: none})
+::get_assets_maps
+::set_tx_sender ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 get-listing u1)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 buy-fractions u1 u4)
+::get_assets_maps
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 get-listing u1)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 transfer u1 u4 'ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM)
+::get_assets_maps
+::set_tx_sender ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+(contract-call? .partage-v1 burn-fractions u1 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM)
+(contract-call? .partage-v1 unlist-fractions u1 u6)
+::get_assets_maps
+(contract-call? .partage-v1 burn-fractions u1 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM)
+::get_assets_maps
+(contract-call? .partage-v1 list-nft {token-id: u1, unit-price: u3000, expiry: u500, taker: none})
+::get_assets_maps
+::set_tx_sender ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 buy-nft u2)
+::get_assets_maps
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 fractionalize-nft u1 'ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC u30)
+(contract-call? .partage-v1 mint-nft 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM "none")
+(contract-call? .partage-v1 fractionalize-nft u1 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM u10)
+(contract-call? .partage-v1 list-fractions {token-id: u1, amount: u10, unit-price: u250, expiry: u500, taker: none})
+::get_assets_maps
+::set_tx_sender ST3PF13W7Z0RRM42A8VZRVFQ75SV1K26RXEP8YGKJ 
+::set_tx_sender 'ST3PF13W7Z0RRM42A8VZRVFQ75SV1K26RXEP8YGKJ 
+::set_tx_sender ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 get-listing u1)
+(contract-call? .partage-v1 get-listing u1)
+::set_tx_sender ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+(contract-call? .partage-v1 get-listing u1)
+(contract-call? .partage-v1 mint-nft 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM "none")
+(contract-call? .partage-v1 fractionalize-nft u1 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM u10)
+(contract-call? .partage-v1 list-fractions {token-id: u1, amount: u10, unit-price: u10, expiry: u1000000, taker: none})
+::set_tx_sender ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 buy-fractions u1 u10)
+(contract-call? .partage-v1 transfer-stx 100 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5)
+(contract-call? .partage-v1 transfer-stx u100 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5)
+(contract-call? .partage-v1 mint-nft 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM "none")
+(contract-call? .partage-v1 fractionalize-nft u1 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM u10)
+(contract-call? .partage-v1 list-fractions {token-id: u1, amount: u10, unit-price: u10, expiry: u1000000, taker: none})
+::set_tx_sender ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.partage-v1 buy-fractions u1 u10)
